@@ -10,7 +10,11 @@ Follow these steps:
 Clone Git Repository:
 
 If you've connected to GitHub, you can also clone the repository using git:
-```git clone your-repository-url```
+
+
+```git clone mindful-youth-empowerment```
+
+
 Once you have the code locally, you can run it with npm:
 
 ```npm install```
