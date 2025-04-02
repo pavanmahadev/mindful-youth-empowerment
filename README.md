@@ -12,7 +12,7 @@ Clone Git Repository:
 If you've connected to GitHub, you can also clone the repository using git:
 
 
-```git clone mindful-youth-empowerment```
+```git clone https://github.com/pavanmahadev/mindful-youth-empowerment```
 
 
 Once you have the code locally, you can run it with npm:
