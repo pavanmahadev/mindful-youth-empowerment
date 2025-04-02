@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { Heart, BookOpen, Brain, Smile, Clock, PlayCircle, ChevronRight, Activity, Yoga, Lotus } from 'lucide-react';
+import { Heart, BookOpen, Brain, Smile, Clock, PlayCircle, ChevronRight, Activity, Leaf, FlowerIcon } from 'lucide-react';
 
 const VideoDialog = ({ videoTitle, videoDescription, videoUrl }: { videoTitle: string, videoDescription: string, videoUrl: string }) => {
   return (
@@ -128,7 +128,7 @@ const RecoveryMethods = () => {
               </p>
               <div className="flex justify-center space-x-4">
                 <Badge variant="outline" className="px-4 py-2 text-awareness-green border-awareness-green">
-                  <Yoga className="h-4 w-4 mr-2" />
+                  <Leaf className="h-4 w-4 mr-2" />
                   Holistic
                 </Badge>
                 <Badge variant="outline" className="px-4 py-2 text-awareness-purple border-awareness-purple">
@@ -136,7 +136,7 @@ const RecoveryMethods = () => {
                   Evidence-Based
                 </Badge>
                 <Badge variant="outline" className="px-4 py-2 text-awareness-blue border-awareness-blue">
-                  <Lotus className="h-4 w-4 mr-2" />
+                  <FlowerIcon className="h-4 w-4 mr-2" />
                   Mind-Body
                 </Badge>
               </div>
@@ -159,7 +159,7 @@ const RecoveryMethods = () => {
               <TabsContent value="yoga" className="pt-8">
                 <RecoveryMethod 
                   title="Yoga for Recovery"
-                  icon={Yoga}
+                  icon={Leaf}
                   description="Yoga combines physical postures, breathing exercises, and meditation to improve physical and mental well-being. It can be particularly helpful during recovery by reducing stress, improving body awareness, and providing healthy coping mechanisms."
                   benefits={[
                     "Reduces stress and anxiety",
@@ -352,7 +352,7 @@ const RecoveryMethods = () => {
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <div className="bg-awareness-green/10 p-2 rounded-full mr-4">
-                      <Lotus className="h-5 w-5 text-awareness-green" />
+                      <FlowerIcon className="h-5 w-5 text-awareness-green" />
                     </div>
                     <div>
                       <p className="font-medium">Mini Mindfulness Breaks</p>
