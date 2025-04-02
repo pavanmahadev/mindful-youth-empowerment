@@ -38,8 +38,8 @@ const Index = () => {
               </div>
               <div className="md:w-1/2 flex justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1498936178812-4b2e558d2937?auto=format&fit=crop&w=800&q=80" 
-                  alt="Mindful Youth Community" 
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" 
+                  alt="Peaceful landscape for recovery" 
                   className="rounded-lg shadow-xl max-w-full h-auto"
                 />
               </div>
@@ -97,8 +97,8 @@ const Index = () => {
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 mb-10 md:mb-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=800&q=80" 
-                  alt="About MindfulYouth" 
+                  src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" 
+                  alt="Path to recovery" 
                   className="rounded-lg shadow-lg"
                 />
               </div>

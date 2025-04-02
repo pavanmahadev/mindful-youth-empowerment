@@ -23,13 +23,14 @@ const VideoDialog = ({ videoTitle, videoDescription, videoUrl }: { videoTitle: s
           <DialogTitle>{videoTitle}</DialogTitle>
           <DialogDescription>{videoDescription}</DialogDescription>
         </DialogHeader>
-        <div className="aspect-video w-full bg-gray-200 rounded-md flex items-center justify-center">
-          {/* In a real app, this would be the actual video embed */}
-          <div className="text-center p-6">
-            <PlayCircle className="h-16 w-16 text-awareness-purple mx-auto mb-4" />
-            <p className="text-gray-700">Video player would be embedded here</p>
-            <p className="text-sm text-gray-500 mt-2">URL: {videoUrl}</p>
-          </div>
+        <div className="aspect-video w-full rounded-md overflow-hidden">
+          <iframe 
+            src={videoUrl} 
+            title={videoTitle}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen
+            className="w-full h-full"
+          ></iframe>
         </div>
       </DialogContent>
     </Dialog>
@@ -168,9 +169,9 @@ const RecoveryMethods = () => {
                     "Provides healthy coping skills",
                     "Supports better sleep quality"
                   ]}
-                  videoTitle="Beginner Yoga for Recovery"
-                  videoDescription="A gentle 15-minute yoga practice designed specifically for those in recovery."
-                  videoUrl="https://example.com/recovery-yoga"
+                  videoTitle="Yoga for Addiction Recovery"
+                  videoDescription="A gentle 20-minute yoga practice designed specifically for those in recovery."
+                  videoUrl="https://www.youtube.com/embed/1ybq8B1hDVM"
                   steps={[
                     {
                       title: "Start with Breathing",
@@ -210,7 +211,7 @@ const RecoveryMethods = () => {
                   ]}
                   videoTitle="Guided Meditation for Healing"
                   videoDescription="A 10-minute guided meditation specifically designed to support healing and recovery."
-                  videoUrl="https://example.com/recovery-meditation"
+                  videoUrl="https://www.youtube.com/embed/6p_yaNFSYao"
                   steps={[
                     {
                       title: "Find a Quiet Space",
@@ -250,7 +251,7 @@ const RecoveryMethods = () => {
                   ]}
                   videoTitle="Everyday Mindfulness Practices"
                   videoDescription="Learn simple mindfulness techniques you can incorporate into your daily routine."
-                  videoUrl="https://example.com/mindfulness-techniques"
+                  videoUrl="https://www.youtube.com/embed/QHkXvPq2pQE"
                   steps={[
                     {
                       title: "Mindful Breathing",
